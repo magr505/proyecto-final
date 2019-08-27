@@ -1,0 +1,271 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+header {
+  width: 100%;
+  background-color: blueviolet;
+  justify-content: space-between;
+  display: flex;
+  position: sticky;
+  top: 0;
+  box-shadow: 0px 4px 6px rgba(78, 78, 78, 0.4);
+}
+header .navbar {
+  width: 100%;
+}
+header .navbar .menu-responsive {
+  width: 10%;
+}
+header .navbar .menu-responsive .menu1 {
+  width: 100%;
+}
+header .navbar .menu-responsive .menu1 a {
+  color: white;
+}
+header .navbar .menu-responsive .menu1 a .materaial-icons {
+  width: 50px;
+  margin: 8px;
+}
+
+.main {
+  width: 100%;
+}
+.main .arriba {
+  width: 100%;
+}
+.main .arriba .informacion1 {
+  width: 100%;
+}
+.main .arriba .informacion1 .inf, .main .arriba .informacion1 .muestra {
+  width: 49.5%;
+  display: inline-block;
+  vertical-align: middle;
+}
+.main .arriba .informacion1 .inf .titulo-inf {
+  color: dimgray;
+  text-align: center;
+  font-family: sans-serif;
+  font-size: 1.6rem;
+}
+.main .arriba .informacion1 .inf p {
+  font-size: 1.3rem;
+  color: dimgray;
+  text-align: left;
+  line-height: 28px;
+  font-family: sans-serif;
+  margin: 6px;
+  padding: 3rem;
+}
+.main .arriba .informacion1 .muestra {
+  height: 450px;
+}
+.main .medio {
+  width: 100%;
+}
+.main .medio .informacion2 {
+  width: 100%;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+.main .medio .informacion2 .inf {
+  width: 100%;
+}
+.main .medio .informacion2 .inf .titulo-inf {
+  color: dimgray;
+  text-align: center;
+  font-family: sans-serif;
+  font-size: 1.6rem;
+}
+.main .medio .informacion2 .inf p {
+  font-size: 1.3rem;
+  color: dimgray;
+  text-align: left;
+  line-height: 28px;
+  font-family: sans-serif;
+  margin: 6px;
+  padding: 3rem;
+}
+.main .consolas {
+  width: 100%;
+}
+.main .consolas .tipo-consola {
+  width: 22.1%;
+  height: 22rem;
+  display: inline-block;
+  margin: 1rem;
+  vertical-align: top;
+  box-shadow: 0px 4px 4px rgba(78, 78, 78, 0.4);
+}
+.main .consolas .tipo-consola .titulo-consola {
+  color: white;
+  text-align: center;
+  font-family: sans-serif;
+  font-size: 1.3rem;
+  background-color: blueviolet;
+  padding: 1rem;
+}
+.main .consolas .tipo-consola .logo-consola {
+  width: 100%;
+  height: 100px;
+  background-color: #5ce3b6;
+  vertical-align: top;
+}
+.main .consolas .tipo-consola .descripcion-breve {
+  font-size: 1rem;
+  color: dimgray;
+  text-align: left;
+  line-height: 28px;
+  font-family: sans-serif;
+  margin: 6px;
+  padding: 1rem;
+}
+.main .abajo {
+  width: 100%;
+}
+.main .abajo .tipo-otro {
+  width: 47%;
+  height: 100%;
+  display: inline-block;
+  margin: 1rem;
+  vertical-align: top;
+  box-shadow: 0px 4px 4px rgba(78, 78, 78, 0.4);
+  /* .contenedor-otro{
+       width: 100%;
+       height: 260px;
+       .contenedor-imagen{
+           width: 40%;
+           height: 260px;
+       }
+   }*/
+}
+.main .abajo .tipo-otro .titulo-otro {
+  color: white;
+  text-align: center;
+  font-family: sans-serif;
+  font-size: 1.3rem;
+  background-color: blueviolet;
+  padding: 1rem;
+}
+.main .abajo .tipo-otro .logo-otro {
+  width: 40%;
+  height: 230px;
+  background-color: #5ce3b6;
+  vertical-align: top;
+}
+.main .abajo .tipo-otro .descripcion-otro {
+  width: 50%;
+  float: right;
+  font-size: 1rem;
+  color: dimgray;
+  text-align: left;
+  line-height: 28px;
+  font-family: sans-serif;
+  margin: 6px;
+  padding: 1rem;
+}
+
+footer {
+  background-color: blueviolet;
+  width: 100;
+}
+footer .pie {
+  width: 100%;
+  vertical-align: middle;
+}
+footer .pie .fin {
+  color: white;
+  text-align: center;
+  font-family: sans-serif;
+  font-size: 1.6rem;
+  background-color: #5ce3b6;
+}
+footer .pie .pies {
+  display: inline-block;
+  padding: 2rem;
+}
+footer .pie .pies .titulo-pie {
+  color: white;
+  text-align: center;
+  font-family: sans-serif;
+  font-size: 1.6rem;
+}
+footer .pie .pies .lista-pie {
+  margin: 1rem;
+  padding: 1rem;
+}
+footer .pie .pies .lista-pie li a {
+  font-size: 1.4rem;
+}
+
+@media (max-width: 480px) {
+  .main {
+    width: 100%;
+  }
+  .main .arriba {
+    width: 100%;
+  }
+  .main .arriba .informacion1 {
+    width: 100%;
+  }
+  .main .arriba .informacion1 .inf, .main .arriba .informacion1 .muestra {
+    width: 100%;
+  }
+  .main .medio {
+    width: 100%;
+  }
+  .main .medio .informacion2 {
+    width: 100%;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  }
+  .main .medio .informacion2 .inf {
+    width: 100%;
+  }
+  .main .medio .informacion2 .inf .titulo-inf {
+    color: dimgray;
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 1.6rem;
+  }
+  .main .medio .informacion2 .inf p {
+    font-size: 1.3rem;
+    color: dimgray;
+    text-align: left;
+    line-height: 28px;
+    font-family: sans-serif;
+    margin: 6px;
+    padding: 3rem;
+  }
+  .main .consolas {
+    width: 100%;
+    display: block;
+  }
+  .main .consolas .tipo-consola {
+    width: 90%;
+    height: 22rem;
+    display: inline-block;
+    margin: 1rem;
+    vertical-align: top;
+  }
+  .main .consolas .tipo-consola .descripcion-breve {
+    font-size: 1rem;
+    color: dimgray;
+    text-align: left;
+    line-height: 28px;
+    font-family: sans-serif;
+    margin: 6px;
+    padding: 1rem;
+  }
+}
+@media (min-width: 481px) and (max-width: 720px) {
+  .main {
+    width: 100%;
+  }
+}
+
+/*# sourceMappingURL=stylo.css.map */

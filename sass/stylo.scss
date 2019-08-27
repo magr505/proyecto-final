@@ -1,0 +1,230 @@
+$smart:480px;
+$tablet:720px;
+$pc:1024px;
+@mixin escritura($fcolor:dimgray,$fsize:1.3rem,$pad:3rem){
+    font-size: $fsize;
+    color: $fcolor;
+    text-align: left;
+    line-height: 28px;
+    font-family: sans-serif;
+    margin: 6px;
+    padding: $pad;
+}
+@mixin titulos($fcolor:dimgray,$ftam:1.6rem){
+    color: $fcolor;
+    text-align: center;
+    font-family: sans-serif;
+    font-size: $ftam;
+}
+@mixin consola($tam:22.1%,$height:22rem){
+    width: $tam;
+    height: $height;
+    display: inline-block;
+    margin: 1rem;
+    vertical-align: top;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    
+}
+header{
+    width: 100%;
+//    height: 100px;
+    background-color: blueviolet;
+    justify-content: space-between;
+    display: flex;
+    position: sticky;
+    top: 0;
+    box-shadow: 0px 4px 6px rgba(78, 78, 78, 0.4);
+    .navbar{
+        width: 100%;
+        .menu-responsive{
+            width: 10%;
+            .menu1{
+                width: 100%;
+                a{
+                    color: white;
+                    .materaial-icons{
+                        width: 50px;
+                        margin: 8px;
+                    }
+                }
+            }
+        }
+    }
+}
+.main{
+    width: 100%;
+    .arriba{
+    width: 100%;
+    .informacion1{
+        width: 100%;
+        .inf,.muestra{
+            width: 49.5%;
+            display: inline-block;
+            vertical-align: middle;
+        }
+        .inf{
+            .titulo-inf{
+                @include titulos();
+            }
+            p{
+               @include escritura();
+            }
+        }
+        .muestra{
+            height: 450px;
+            }
+        }
+    }
+    .medio{
+        width: 100%;
+        .informacion2{
+            width: 100%;
+            margin-top: 3rem;
+            margin-bottom: 3rem;
+            .inf{
+                width: 100%;
+                .titulo-inf{
+                    @include titulos();
+                }
+                p{
+                    @include escritura();
+                }
+            }
+        }
+    }
+    .consolas{
+        width: 100%;
+        .tipo-consola{
+            @include consola();
+            box-shadow: 0px 4px 4px rgba(78, 78, 78, 0.4);
+            .titulo-consola{
+                @include titulos($fcolor:white,$ftam:1.3rem);
+                background-color: blueviolet;
+                padding: 1rem;
+            }
+            .logo-consola{
+                width: 100%;
+                height: 100px;
+                background-color: #5ce3b6;
+                vertical-align: top;
+            }
+            .descripcion-breve{
+                @include escritura($fsize:1rem,$pad:1rem);
+            }
+        }
+    }
+    .abajo{
+        width: 100%;
+        .tipo-otro{
+            @include consola($tam:47%,$height:100%);
+            box-shadow: 0px 4px 4px rgba(78, 78, 78, 0.4);
+            .titulo-otro{
+                @include titulos($fcolor:white,$ftam:1.3rem);
+                background-color: blueviolet;
+                padding: 1rem;
+            }
+            .logo-otro{
+                width: 40%;
+                height: 230px;
+                background-color: #5ce3b6;
+                vertical-align: top;
+            }
+            .descripcion-otro{
+                width: 50%;
+                float: right;
+                @include escritura($fsize:1rem,$pad:1rem);
+            }
+           /* .contenedor-otro{
+                width: 100%;
+                height: 260px;
+                .contenedor-imagen{
+                    width: 40%;
+                    height: 260px;
+                }
+            }*/
+        }
+    }
+}
+footer{
+    background-color: blueviolet;
+    width: 100;
+    .pie{
+        .fin{
+            @include titulos($fcolor:white);
+            background-color: #5ce3b6;
+        }
+        width: 100%;
+        vertical-align: middle;
+        .pies{
+            display: inline-block;
+            padding: 2rem;
+            .titulo-pie{
+                @include titulos($fcolor:white);
+            }
+            .lista-pie{
+                margin: 1rem;
+                padding: 1rem;
+                li a{
+                    font-size: 1.4rem;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: $smart){
+   
+        .main{
+    width: 100%;
+    .arriba{
+    width: 100%;
+    .informacion1{
+        width: 100%;
+        .inf,.muestra{
+            width: 100%;
+        }
+        }
+    }
+    .medio{
+        width: 100%;
+        .informacion2{
+            width: 100%;
+            margin-top: 3rem;
+            margin-bottom: 3rem;
+            .inf{
+                width: 100%;
+                .titulo-inf{
+                    @include titulos();
+                }
+                p{
+                    @include escritura();
+                }
+            }
+        }
+    }
+    .consolas{
+        width: 100%;
+        display: block;
+        .tipo-consola{
+            @include consola($tam:90%);
+            .descripcion-breve{
+                @include escritura($fsize:1rem,$pad:1rem);
+            }
+        }
+    }
+}
+}
+@media (min-width: $smart+1) and (max-width: $tablet){
+    .main{
+        width: 100%;
+    }
+}
+@media (min-width: $tablet+1) and (max-width: $pc){
+    
+}
