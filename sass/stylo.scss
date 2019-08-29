@@ -1,19 +1,17 @@
 $smart:480px;
 $tablet:720px;
 $pc:1024px;
-@mixin escritura($fcolor:dimgray,$fsize:1.3rem,$pad:3rem){
+@mixin escritura($fcolor:dimgray,$fsize:1.3rem,$pad:1.5rem){
     font-size: $fsize;
     color: $fcolor;
     text-align: left;
-    line-height: 28px;
-    font-family: sans-serif;
-    margin: 6px;
+    line-height: 24px;
+    margin: 3px;
     padding: $pad;
 }
 @mixin titulos($fcolor:dimgray,$ftam:1.6rem){
     color: $fcolor;
     text-align: center;
-    font-family: sans-serif;
     font-size: $ftam;
 }
 @mixin consola($tam:22.1%,$height:22rem){
@@ -29,7 +27,7 @@ $pc:1024px;
     box-sizing: border-box;
     text-decoration: none;
     list-style: none;
-    
+    font-family: sans-serif;
 }
 header{
     width: 100%;
@@ -86,7 +84,7 @@ header{
         .informacion2{
             width: 100%;
             margin-top: 3rem;
-            margin-bottom: 3rem;
+//            margin-bottom: 3rem;
             .inf{
                 width: 100%;
                 .titulo-inf{
@@ -107,11 +105,11 @@ header{
                 @include titulos($fcolor:white,$ftam:1.3rem);
                 background-color: blueviolet;
                 padding: 1rem;
+                margin-bottom: 0px;
             }
             .logo-consola{
                 width: 100%;
                 height: 100px;
-                background-color: #5ce3b6;
                 vertical-align: top;
             }
             .descripcion-breve{
@@ -125,16 +123,18 @@ header{
             @include consola($tam:47%,$height:100%);
             box-shadow: 0px 4px 4px rgba(78, 78, 78, 0.4);
             .titulo-otro{
-                @include titulos($fcolor:white,$ftam:1.3rem);
-                background-color: blueviolet;
-                padding: 1rem;
+                @include titulos($fcolor:white,$ftam:1.1rem);
+                background-color: #dea334;
+//                padding: 0.2rem;
+                margin-bottom:  0px;
             }
             .logo-otro{
-                width: 40%;
-                height: 230px;
-                background-color: #5ce3b6;
+                width: 47%;
+                height: 180px;
                 vertical-align: top;
+                padding: 0;
             }
+            
             .descripcion-otro{
                 width: 50%;
                 float: right;
@@ -196,7 +196,6 @@ footer{
         .informacion2{
             width: 100%;
             margin-top: 3rem;
-            margin-bottom: 3rem;
             .inf{
                 width: 100%;
                 .titulo-inf{
@@ -212,9 +211,45 @@ footer{
         width: 100%;
         display: block;
         .tipo-consola{
-            @include consola($tam:90%);
+            width: 90%;
             .descripcion-breve{
-                @include escritura($fsize:1rem,$pad:1rem);
+                width: 100%;
+            }
+        }
+    }
+            .abajo{
+        width: 100%;
+        .tipo-otro{
+            width: 90%;
+            .logo-otro{
+                width: 100%;
+            }
+            .descripcion-otro{
+                width: 100%;
+            }
+        }
+    }
+}
+    footer{
+    background-color: blueviolet;
+    width: 100;
+    .pie{
+        width: 100%;
+        .fin{
+            width: 100%;
+        }
+        .pies{
+            display: block;
+            padding: 2rem;
+            width: 100%;
+            .titulo-pie{
+                       font-size: 1.8rem;
+            }
+            .lista-pie{
+               
+                li a{
+                    font-size: 1.6rem;
+                }
             }
         }
     }
