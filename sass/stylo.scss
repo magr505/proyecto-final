@@ -232,7 +232,7 @@ footer{
 }
     footer{
     background-color: blueviolet;
-    width: 100;
+    width: 100%;
     .pie{
         width: 100%;
         .fin{
@@ -240,8 +240,10 @@ footer{
         }
         .pies{
             display: block;
-            padding: 2rem;
+            padding: 0;
             width: 100%;
+            text-align: center;
+            font-size: 2.3rem;
             .titulo-pie{
                        font-size: 1.8rem;
             }

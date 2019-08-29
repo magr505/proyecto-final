@@ -253,7 +253,7 @@ footer .pie .pies .lista-pie li a {
 
   footer {
     background-color: blueviolet;
-    width: 100;
+    width: 100%;
   }
   footer .pie {
     width: 100%;
@@ -263,8 +263,10 @@ footer .pie .pies .lista-pie li a {
   }
   footer .pie .pies {
     display: block;
-    padding: 2rem;
+    padding: 0;
     width: 100%;
+    text-align: center;
+    font-size: 2.3rem;
   }
   footer .pie .pies .titulo-pie {
     font-size: 1.8rem;
